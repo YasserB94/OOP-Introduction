@@ -26,10 +26,10 @@ class Beverage
         $this->price = $price;
         $this->temperature = $temperature;
     }
-    public function printTemperature()
+    public function getInfo(): string
     {
-        printf($this->temperature);
+        return 'This beverage is ' . $this->temperature . ' and ' . $this->color . '.';
     }
 }
 $cola = new Beverage('black', 2);
-$cola->printTemperature();
+echo $cola->getInfo();
