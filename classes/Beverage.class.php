@@ -1,9 +1,12 @@
 <?php
+
+declare(strict_types=1);
+
 class Beverage
 {
-    public string $color;
-    public float $price;
-    public string $temperature;
+    protected string $color;
+    private float $price;
+    private string $temperature;
     function __construct(string $color, float $price)
     {
         $this->color = $color;
@@ -18,19 +21,27 @@ class Beverage
     {
         return $this->color;
     }
+    public function setColor(string $color)
+    {
+        $this->color = $color;
+    }
 }
 class Beer extends Beverage
 {
-    public string $name;
-    public float $alcoholPercentage;
+    private string $name;
+    private float $alcoholPercentage;
     function __construct(string $color, float $price, string $name, float $alcoholPercentage)
     {
         parent::__construct($color, $price);
         $this->name = $name;
         $this->alcoholPercentage = $alcoholPercentage;
     }
-    function getAlcoholPercentage(): string
+    function getAlcoholPercentage(): float
     {
         return $this->alcoholPercentage;
+    }
+    function beerInfo(): string
+    {
+        return "Hi i'm " . $this->name . " and have an alcochol percentage of " . $this->alcoholPercentage . " and I have a " . $this->color . " color.";
     }
 }
