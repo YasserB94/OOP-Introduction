@@ -29,6 +29,9 @@ class Beverage
         return $this->price;
     }
     function setPrice(float $price){
+        if($price<0){
+            return Error('Tried to set price to negative number');
+        }
         $this->price = $price;
     }
     function getBar(){
