@@ -7,17 +7,24 @@ This repository contains 7 learning exercises provided by BeCode to learn Object
 ### The Start
 I don't like to fight my browser while trying to change a URL in the address bar.
 So I setup my homepage(index.php) with a little switch (Thank you BeCode coaches senpais for injecting the idea into my head).
+
 Yay, now I can get to the pages easely by typing in their names on the homepage.
+
 I feel like a real programmer now, spend an hour to build a script that prevents me to do a task that probably would take 1/10th of the time.
 
 ### The Class
 I'll cry when this gets messy, so let's create the class file externally.
 But require does not seem the right way to go.
 Thank you once again [w3Schools](https://www.w3schools.com/php/php_includes.asp).
+
 >Use require when the file is required by the application.
+
 >Use include when the file is not required and application should continue when file is not found.
+
 Now what is this include_once thingy I heard about ?
+
 > It provides us with a feature that if a code from a PHP file is already included in a specified file then it will not include that code again.
+
 That sounds awesome, I'm loving PHP it's all built in :D
 Things like:
 ```php
@@ -29,7 +36,8 @@ Allright, all setup to tackle the exercises without ending up with a bunch of co
 ### Classes
 After using these awesome things called classes in JavaScript this sounds like music to my ears.
 Once again kudos to the BeCode coaches for helping me to walk before I start running.
-$this->once seemed easy enough, altough I really miss the JS syntax where I could just use a . to access properties and methods!
+$this->once seemed easy enough
+altough I really miss the JS syntax where I could just use a . to access properties and methods!
 
 ### Extending
 Yaay this also kind-of works like other languages, the research and extra study hours are really paying off here.
@@ -39,6 +47,7 @@ What's that whisper I heard for the x'd time ?
 print_r($value)
 ```
 > print_r — Prints human-readable information about a variable
+
 Allrighty, human readable. I am kind of human! Goodbye echo, I'll see you when I need you.
 Ah, hello echo! c'mon PHP, I said I liked you! why don't you give me an easy way to add line breaks between my messy print_r's ={
 
