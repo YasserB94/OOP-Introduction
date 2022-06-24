@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 class Beverage
 {
+    static string $ADDRESS = "Melkmarkt 9, 2000 Antwerpen";
     protected string $color;
     protected float $price;
     protected string $temperature;
@@ -12,6 +13,9 @@ class Beverage
         $this->color = $color;
         $this->price = $price;
         $this->temperature = 'cold';
+    }
+    public function getAddress():string{
+        return self::$ADDRESS;
     }
     public function getInfo(): string
     {
