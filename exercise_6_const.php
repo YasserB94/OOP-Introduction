@@ -16,3 +16,14 @@ TODO: Make sure that every print is on a new line.
 
 Use typehinting everywhere!
 */
+include_once __DIR__ . '/classes/Beverage.class.php';
+define('BARNAME','Het Vervolg');
+print_r(BARNAME);
+$cola = new Beverage('black', 2);
+echo '<br/>';
+echo '<br/>';
+print_r($cola->getBar());
+$duvel = new Beer('blond', 3.5, 'Duvel', 8.5);
+echo '<br/>';
+echo '<br/>';
+print_r($duvel->getBar());
