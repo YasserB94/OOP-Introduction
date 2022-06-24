@@ -5,8 +5,8 @@ declare(strict_types=1);
 class Beverage
 {
     protected string $color;
-    private float $price;
-    private string $temperature;
+    protected float $price;
+    protected string $temperature;
     function __construct(string $color, float $price)
     {
         $this->color = $color;
@@ -25,7 +25,17 @@ class Beverage
     {
         $this->color = $color;
     }
+    function getPrice():float{
+        return $this->price;
+    }
+    function setPrice(float $price){
+        $this->price = $price;
+    }
+    function getBar(){
+        return BARNAME;
+    }
 }
+
 class Beer extends Beverage
 {
     private string $name;
