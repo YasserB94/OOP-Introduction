@@ -11,3 +11,10 @@ TODO: Print the address without creating a new instant of the beverage class 2 t
 
 Use typehinting everywhere!
 */
+include_once __DIR__ . '/classes/Beverage.class.php';
+$cola = new Beverage('black', 2);
+
+print_r($cola::$ADDRESS);
+echo '<br/>';
+echo '<br/>';
+print_r($cola->getAddress());
